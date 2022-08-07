@@ -1,0 +1,64 @@
+.hero {
+  position: relative;
+  background-image: url("../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrap {
+    padding: 287px 0 80px;
+    min-height: 970px;
+    background-image: url("../img/hero-bg-man.png");
+    background-position: left 73% bottom;
+    background-repeat: no-repeat;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 46px;
+    max-width: 666px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 65px;
+    color: var(--light-color);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 77px;
+    max-width: 558px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--light-color);
+  }
+
+  &__btn {
+    margin-bottom: 152px;
+  }
+
+  &__sub-text {
+    position: relative;
+    margin: 0;
+    padding-right: 142px;
+    max-width: 564px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--light-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 115px;
+      height: 82px;
+      background: center / cover url("../img/hero-certificate.jpg") no-repeat;
+      transform: translateY(-50%);
+    }
+  }
+}

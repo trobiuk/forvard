@@ -1,3 +1,22 @@
 .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+  background-color: var(--black-color);
 
+  &__inner {
+    @include flex-all-sb;
+
+    padding: 20px 0;
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: var(--light-color);
+  }
 }
