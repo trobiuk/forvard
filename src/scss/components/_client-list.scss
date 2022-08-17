@@ -1,0 +1,36 @@
+.client-list {
+  &__item {
+    @include mb(60px);
+
+    position: relative;
+    padding-left: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 64px;
+      height: 64px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-title {
+      margin: 0 0 11px;
+      max-width: 513px;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      color: var(--dark-color);
+    }
+
+    &-text {
+      margin: 0;
+      max-width: 420px;
+      font-size: 18px;
+      color: var(--grey-color);
+    }
+  }
+}

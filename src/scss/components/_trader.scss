@@ -1,0 +1,54 @@
+.trader {
+  margin: 0 auto;
+  padding-top: 211px;
+  background-image: url("../img/trader-bg.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+
+  &__inner {
+    margin-left: 775px;
+    padding: 76px 0 75px 99px;
+    box-shadow: var(--shadow);
+    background-color: var(--light-color);
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    margin-left: 100px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    &:nth-child(1) {
+      &::before {
+        background-image: url("../img/sprite.svg#trader-1");
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url("../img/sprite.svg#trader-2");
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url("../img/sprite.svg#trader-3");
+      }
+    }
+  }
+
+  &__link-wrap {
+    padding-left: 100px;
+  }
+
+  &__link {
+    margin-left: 30px;
+    text-decoration-line: underline;
+    color: var(--blue-color);
+  }
+}
